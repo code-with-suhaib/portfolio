@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+    cursor: default;
+}
+
+html a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+/* -------------------------------------Landing Page-------------------
+---------------- */
+header .landing-page{
+    padding: 0rem 0rem 0rem 10rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+/* -------------------------------Right Side-------------------------
+----------------------- */
+header .landing-page .right{
+    padding-top: 2rem;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+header .landing-page .right .up1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header .landing-page .right .up1 img{
+    width: 25%;
+    height: auto;
+    animation: bounceInDown;
+    animation-duration: 1.5s;
+    border: 0.2rem solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 4px rgba(1, 1, 14, 0.5));
+}
+
+header .landing-page .right .up1 p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.2vw;
+    line-height: 7.3rem;
+    background: linear-gradient(294.67deg, #0283E9 18.99%, #FC01CA 90.66%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+/* -------------------------------------Right Upper------------------------
+---------------------- */
+header .landing-page .right .upper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5rem;
+}
+
+header .landing-page .right .upper p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: auto;
+    text-align: justify;
+    color: #828089;
+    background: linear-gradient(294.67deg, #030eb1 18.99%, #FC01CA 90.66%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+header .landing-page .right .upper p:hover{
+    background-position: 0 0;
+    transition: 1s;
+}
+
+header .landing-page .right .lower{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+}
+
+header .landing-page .right .lower img{
+    width: 7.1rem;
+    height: auto;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+header .landing-page .right .lower img:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10%;
+}
+
+header .landing-page .right .lower .btn{
+    background: linear-gradient(294.67deg, #0283E9 18.99%, #FC01CA 90.66%);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+header .landing-page .right .lower .btn:hover{
+    filter: drop-shadow(none);
+    transition: all 0.5s;
+    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.8));
+}
+
+header .landing-page .right .lower .btn a{
+    background: linear-gradient(to right, #0283E9 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    text-align: center;
+}
+
+header .landing-page .right .lower .btn a span{
+    background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+header .landing-page .right .lower a:hover, 
+header .landing-page .right .lower a span:hover{
+    background-position: 0 0;
+    transform: scale(1.001);
+    transition: 1s;
+}
+
+
+
+/* ----------------------------------------Let Side--------------------
+---------------------- */
+
+header .landing-page .left{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .landing-page .left svg{
+    width: 100%;
+    height: auto;
+}
+
+header .landing-page .left img{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 5vw;
+    right: 2vw;
+    animation: fadeInRight 2s;
+}
+
+/* -----------------------------------Website Responsive--------------
+------------------------------ */
+
+@media (max-width: 1280px){
+    /* -------------------------------------Landing Page 1280px-------------------
+---------------- */
+header .landing-page{
+    padding: 0rem 0rem 0rem 8rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+/* -------------------------------Right Side 1280px-------------------------
+----------------------- */
+header .landing-page .right{
+    padding-top: 10rem;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+header .landing-page .right .up1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header .landing-page .right .up1 img{
+    width: 25%;
+    height: auto;
+    position: relative;
+    top: -5rem;
+    animation: bounceInDown;
+    animation-duration: 1s;
+}
+
+header .landing-page .right .up1 p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4vw;
+}
+/* -------------------------------------Right Upper 1280px------------------------
+---------------------- */
+header .landing-page .right .upper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header .landing-page .right .upper p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: auto;
+    text-align: justify;
+    background: linear-gradient(294.67deg, #030eb1 18.99%, #FC01CA 90.66%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+header .landing-page .right .lower img{
+    width: 7.1rem;
+    height: auto;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+}
+
+@media (max-width: 980px){
+    /* -------------------------------------Landing Page 980px-------------------
+---------------- */
+header .landing-page{
+    padding: 0rem 0rem 0rem 5rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+/* -------------------------------Right Side 980px-------------------------
+----------------------- */
+header .landing-page .right{
+    padding-top: 5rem;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+header .landing-page .right .up1{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+header .landing-page .right .up1 img{
+    width: 45%;
+    height: auto;
+    position: relative;
+    top: 0rem;
+    animation: bounceInDown;
+    animation-duration: 1s;
+}
+
+header .landing-page .right .up1 p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8vw;
+    line-height: 7.3rem;
+}
+/* -------------------------------------Right Upper 980px------------------------
+---------------------- */
+
+header .landing-page .right .upper p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.2vw;
+    line-height: auto;
+    text-align: justify;
+    color: #828089;
+}
+
+header .landing-page .right .upper p:hover{
+    background-position: 0 0;
+    transition: 1s;
+}
+
+header .landing-page .right .lower img{
+    width: 5.1rem;
+    height: auto;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+header .landing-page .right .lower .btn a{
+    background: linear-gradient(to right, #0283E9 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    text-align: center;
+}
+
+}
+
+@media (max-width: 768px){
+    /* -------------------------------------Landing Page 768px-------------------
+---------------- */
+header .landing-page{
+    padding: 0rem 0rem 0rem 5rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+/* -------------------------------Right Side 768px-------------------------
+----------------------- */
+header .landing-page .right{
+    padding-top: 2rem;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+header .landing-page .right .up1{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    align-items: flex-start;
+}
+
+header .landing-page .right .up1 img{
+    padding: 2%;
+    width: 40%;
+    height: auto;
+    position: relative;
+    top: 0rem;
+    animation: bounceInDown;
+    animation-duration: 1s;
+}
+
+header .landing-page .right .up1 p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8vw;
+    line-height: 3rem;
+}
+/* -------------------------------------Right Upper 768px------------------------
+---------------------- */
+
+header .landing-page .right .upper p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: auto;
+    text-align: justify;
+}
+
+header .landing-page .right .upper p:hover{
+    background-position: 0 0;
+    transition: 1s;
+}
+
+header .landing-page .right .lower img{
+    width: 4.1rem;
+    height: auto;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+header .landing-page .right .lower .btn{
+    border-radius: 0.5rem;
+}
+
+header .landing-page .right .lower .btn a{
+    background: linear-gradient(to right, #0283E9 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    text-align: center;
+}
+
+}

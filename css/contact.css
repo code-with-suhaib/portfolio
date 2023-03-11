@@ -1,0 +1,1321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+    cursor: default;
+}
+
+html a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* --------------------------------------Navbar Management----------------
+--------------------------------- */
+
+.navbar{
+    padding: 0rem 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(294.67deg, #0283E9 18.99%, #FC01CA 90.66%);
+    z-index: 1;
+}
+/* -------------------------------------left menu -------------------------
+-------------------*/
+.navbar .left-menu{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+.navbar .left-menu .img1{
+    width: 10vw;
+    height: auto;
+    border: 0.2rem solid #ffffff;
+    border-radius: 50%;
+    position: relative;
+    top: 3vw;
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 4px rgba(1, 1, 14, 0.5));
+    animation: bounceInDown;
+    animation-duration: 1.5s;
+}
+
+.navbar .left-menu a{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 0rem;
+    color: #000000;
+    background: linear-gradient(to right, #0283E9 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: jello;
+    animation-duration: 2s;
+}
+
+.navbar .left-menu a:hover{
+    background-position: 0 0;
+    transition: 2s;
+}
+
+.navbar .left-menu a img{
+    width: 2vw;
+    height: auto;
+    transform: rotate(120deg);
+}
+/* ---------------------------------right-menu-----------------
+------------------- */
+.navbar .right-menu{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar .right-menu a{
+    font-size: 2vw;
+    font-family: 'Josefin Sans' sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4rem;
+    background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.navbar .right-menu a:hover{
+    background-position:  0 0;
+    transition: 1s;
+}
+/* ------------------------------------section 1 ------------------
+----------------------------*/
+
+.section1{
+    padding: 10vw 15vw;
+    width: 100%;
+    height: auto;
+    background-image: url(../images/Vector\ 1.png);
+    background-size: 50%;
+    background-position: top right;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.section1 .sub{
+    padding: 3vw;
+    background: #B4BEC8;
+    border-radius: 0.5vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ /* ------------------------upper-----------------
+ ------------------- */
+.section1 .sub .up{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section1 .sub .up p{
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 7rem;
+    background: linear-gradient(270.23deg, #0283E9 0.18%, #FC01CA 99.79%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+ /* ------------------------low-----------------
+ ------------------- */
+.section1 .sub .low{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* ------------------------------------left side------------------
+-------------------- */
+.section1 .sub .low .left{
+    padding: 1vw;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.section1 .sub .low .left p{
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 3vw;
+    color: #000000;
+}
+
+.section1 .sub .low .left input{
+    width: 100%;
+    height: auto;
+    font-family: "Quicksand" sans-serif;
+    font-size: 1.3vw;
+    padding: 1vw;
+}
+
+.section1 .sub .low .left textarea{
+    font-family: "Quicksand" sans-serif;
+    font-size: 1.3vw;
+    padding: 1vw;
+    width: 100%;
+    height: 15vw;
+    border-radius: 0.2vw;
+}
+
+.section1 .sub .low .left .btn{
+    background: linear-gradient(294.67deg, #0283E9 18.99%, #FC01CA 90.66%);
+    padding: 0.5vw 1vw;
+    border-radius: 0.3vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .left a{
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vw;
+    line-height: auto;
+    text-align: center;
+    color: #FFFFFF;
+    
+}
+
+.section1 .sub .low .left a:hover{
+    background: rgb(211, 206, 206);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.section1 .sub .low .left .btn:hover{
+    transform: scale(1.01);
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* ----------------------------------------rught side--------------
+---------------------- */
+
+.section1 .sub .low .right{
+    padding: 1vw;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.section1 .sub .low .right .up1{
+    padding-top: 5vw;
+    padding-left: 2vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.section1 .sub .low .right .up1 a{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    font-family: 'Objective';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: auto;
+    color: #0F001A;
+}
+
+.section1 .sub .low .right .up1 a img{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.section1 .sub .low .right .lo1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vw;
+}
+
+.section1 .sub .low .right .lo1 .links{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    padding: 1vw 0vw 2vw 0vw;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(1) img{
+    width: 4vw;
+    height: 4vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(2) img{
+    width: 5vw;
+    height: 4vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(3) img{
+    width: 5vw;
+    height: 4vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(4) img{
+    width: 3vw;
+    height: 4vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(1) img:hover,
+.section1 .sub .low .right .lo1 .links a:nth-child(2) img:hover,
+.section1 .sub .low .right .lo1 .links a:nth-child(3) img:hover,
+.section1 .sub .low .right .lo1 .links a:nth-child(4) img:hover{
+    transform: scale(1.05);
+}
+
+
+.section1 .sub .low .right .lo1 .img{
+    width: 100%;
+}
+
+/* ----------------------------------section4------------
+---------------------------- */
+
+.section4{
+    padding: 3vw 6vw;
+    background: rgba(1, 1, 14, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 2vw;
+}
+
+.section4 p{
+    font-family: 'Josefin Sans' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 0;
+    color: #FFFFFF;
+}
+
+.section4 .input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section4 input{
+    width: 35vw;
+    height: auto;
+    padding: 1vw 1vw;
+    border-radius: 5px;
+    font-size: 2vw;
+    border-style: none;
+}
+
+.section4 a img{
+    width: 5vw;
+    height: auto;
+    padding: 0.6vw;
+    position: relative;
+    left: -5vw;
+    transition: all 0.2s;
+}
+
+.section4 a img:hover{
+    background-color: rgba(1, 1, 14, 0.3);
+    border-radius: 10%;
+}
+
+/* -----------------------------------------footer---------------------
+----------------------------- */
+footer{
+    padding: 1vw 6vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B2B2B;
+}
+
+footer .content{
+    font-family: 'Josefin Sans' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 6vw;
+    color: #FFFFFF;
+}
+
+footer .copyright{
+    font-family: 'Josefin Sans' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 1vw;
+    color: #FFFFFF;
+}
+
+/* -------------------------------------------Website Responsive---------
+----------------------------- */
+/* ----------------------------Laptop Ddevices-------------
+----------------------- */
+@media(max-width:1280px){
+    .navbar{
+        padding: 0rem 6vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 7rem;
+        position: sticky;
+        top: 0;
+        background: linear-gradient(294.67deg, #0283E9 18.99%, #FC01CA 90.66%);
+        z-index: 1;
+    }
+    /* -------------------------------------left menu  1280px-------------------------
+    -------------------*/
+    .navbar .left-menu{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5%;
+    }
+    
+    .navbar .left-menu .img1{
+        width: 8vw;
+        height: auto;
+        border: 0.2rem solid #ffffff;
+        border-radius: 50%;
+        position: relative;
+        top: 2vw;
+        cursor: pointer;
+        filter: drop-shadow(4px 4px 4px rgba(1, 1, 14, 0.5));
+        animation: bounceInDown;
+        animation-duration: 1.5s;
+    }
+    
+    .navbar .left-menu a{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 2%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Pacifico', cursive;
+        font-weight: 700;
+        font-size: 2.5vw;
+        line-height: 0rem;
+        color: #000000;
+        background: linear-gradient(to right, #0283E9 50%, #ffffff 50%);
+        background-size: 200% 100%;
+        background-position: 100% 0%;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: jello;
+        animation-duration: 2s;
+    }
+    
+    .navbar .left-menu a:hover{
+        background-position: 0 0;
+        transition: 2s;
+    }
+    
+    .navbar .left-menu a img{
+        width: 2vw;
+        height: auto;
+        transform: rotate(120deg);
+    }
+    /* ---------------------------------right-menu 1280px-----------------
+    ------------------- */
+    .navbar .right-menu{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .navbar .right-menu a{
+        font-size: 2vw;
+        font-family: 'Josefin Sans' sans-serif;
+        font-family: 'Pacifico', cursive;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 4rem;
+        background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+        background-size: 200% 100%;
+        background-position: 100% 0%;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    
+    .navbar .right-menu a:hover{
+        background-position:  0 0;
+        transition: 1s;
+    }
+}
+
+/* ----------------------------Tablet Ddevices-------------
+----------------------- */
+
+@media(max-width:980px){
+    /* --------------------------------------Navbar Management 980px----------------
+        --------------------------------- */
+        
+        .navbar{
+            padding: 0rem 6vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 8rem;
+            position: sticky;
+            top: 0;
+            background: linear-gradient(294.67deg, #0283E9 18.99%, #FC01CA 90.66%);
+            z-index: 1;
+        }
+        /* -------------------------------------left menu 980px -------------------------
+        -------------------*/
+        .navbar .left-menu{
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5%;
+        }
+        
+        .navbar .left-menu .img1{
+            width: 10vw;
+            height: auto;
+            border: 0.2rem solid #ffffff;
+            border-radius: 50%;
+            position: relative;
+            top: 2vw;
+            cursor: pointer;
+            filter: drop-shadow(4px 4px 4px rgba(1, 1, 14, 0.5));
+            animation: bounceInDown;
+            animation-duration: 1.5s;
+        }
+        
+        .navbar .left-menu a{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 2%;
+            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-weight: 700;
+            font-size: 3vw;
+            line-height: 0rem;
+            color: #000000;
+            background: linear-gradient(to right, #0283E9 50%, #ffffff 50%);
+            background-size: 200% 100%;
+            background-position: 100% 0%;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: jello;
+            animation-duration: 2s;
+        }
+        
+        .navbar .left-menu a:hover{
+            background-position: 0 0;
+            transition: 2s;
+        }
+        
+        .navbar .left-menu a img{
+            width: 2vw;
+            height: auto;
+            transform: rotate(120deg);
+        }
+        /* ---------------------------------right-menu 980px-----------------
+        ------------------- */
+        .navbar .right-menu{
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        
+        .navbar .right-menu a{
+            font-size: 3vw;
+            font-family: 'Josefin Sans' sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 4rem;
+            background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+            background-size: 200% 100%;
+            background-position: 100% 0%;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        
+        .navbar .right-menu a:hover{
+            background-position:  0 0;
+            transition: 1s;
+        }
+
+/* ------------------------------------section 1 980px------------------
+----------------------------*/
+
+.section1{
+    padding: 10vw 10vw;
+    width: 100%;
+    height: auto;
+    background-image: url(../images/Vector\ 1.png);
+    background-size: 50%;
+    background-position: top right;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.section1 .sub{
+    padding: 3vw;
+    background: #B4BEC8;
+    border-radius: 0.5vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ /* ------------------------upper 980px-----------------
+ ------------------- */
+.section1 .sub .up{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section1 .sub .up p{
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 7rem;
+    background: linear-gradient(270.23deg, #0283E9 0.18%, #FC01CA 99.79%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+ /* ------------------------low 980px-----------------
+ ------------------- */
+.section1 .sub .low{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* ------------------------------------left side 980px------------------
+-------------------- */
+.section1 .sub .low .left{
+    padding: 1vw;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+}
+
+.section1 .sub .low .left p{
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 3vw;
+    color: #000000;
+}
+
+.section1 .sub .low .left input{
+    width: 100%;
+    height: auto;
+    font-family: "Quicksand" sans-serif;
+    font-size: 1.8vw;
+    padding: 1.2vw;
+}
+
+.section1 .sub .low .left textarea{
+    font-family: "Quicksand" sans-serif;
+    font-size: 1.8vw;
+    padding: 1vw;
+    width: 100%;
+    height: 15vw;
+    border-radius: 0.2vw;
+}
+
+.section1 .sub .low .left .btn{
+    background: linear-gradient(294.67deg, #0283E9 18.99%, #FC01CA 90.66%);
+    padding: 1vw 2vw;
+    border-radius: 0.3vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .left a{
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: auto;
+    text-align: center;
+    color: #FFFFFF;
+    
+}
+
+.section1 .sub .low .left a:hover{
+    background: rgb(211, 206, 206);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.section1 .sub .low .left .btn:hover{
+    transform: scale(1.01);
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* ----------------------------------------rught side 980px--------------
+---------------------- */
+
+.section1 .sub .low .right{
+    padding: 1vw;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.section1 .sub .low .right .up1{
+    padding-top: 6vw;
+    padding-left: 2vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.section1 .sub .low .right .up1 a{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    font-family: 'Objective';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: auto;
+    color: #0F001A;
+}
+
+.section1 .sub .low .right .up1 a img{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.section1 .sub .low .right .lo1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vw;
+}
+
+.section1 .sub .low .right .lo1 .links{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    padding: 1vw 0vw 2vw 0vw;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(1) img{
+    width: 4vw;
+    height: 4vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(2) img{
+    width: 5vw;
+    height: 4vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(3) img{
+    width: 5vw;
+    height: 4vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(4) img{
+    width: 3vw;
+    height: 4vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(1) img:hover,
+.section1 .sub .low .right .lo1 .links a:nth-child(2) img:hover,
+.section1 .sub .low .right .lo1 .links a:nth-child(3) img:hover,
+.section1 .sub .low .right .lo1 .links a:nth-child(4) img:hover{
+    transform: scale(1.05);
+}
+
+
+.section1 .sub .low .right .lo1 .img{
+    width: 100%;
+}
+
+/* ----------------------------------section4 980px------------
+        ---------------------------- */
+        
+        .section4{
+            padding: 3vw 6vw;
+            background: rgba(1, 1, 14, 0.8);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            gap: 2vw;
+        }
+        
+        .section4 p{
+            font-family: 'Josefin Sans' sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 3vw;
+            line-height: 0;
+            color: #FFFFFF;
+        }
+        
+        .section4 .input{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .section4 input{
+            width: 35vw;
+            height: auto;
+            padding: 1vw 1vw;
+            border-radius: 5px;
+            font-size: 2vw;
+            border-style: none;
+        }
+        
+        .section4 a img{
+            width: 5vw;
+            height: auto;
+            padding: 0.6vw;
+            position: relative;
+            left: -5vw;
+            transition: all 0.2s;
+        }
+        
+        .section4 a img:hover{
+            background-color: rgba(1, 1, 14, 0.3);
+            border-radius: 10%;
+        }
+        
+        /* -----------------------------------footer 980px----------------
+        ------------------------------ */
+        
+        footer{
+            padding: 6vw 6vw 3vw 6vw;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: #2B2B2B;
+        }
+        
+        footer .content{
+            font-family: 'Josefin Sans' sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 3vw;
+            line-height: 6vw;
+            color: #FFFFFF;
+        }
+        
+        footer .copyright{
+            font-family: 'Josefin Sans' sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2vw;
+            line-height: 4vw;
+            color: #FFFFFF;
+        }
+
+}
+
+/* ----------------------------Mobile Ddevices-------------
+----------------------- */
+@media(max-width:768px){
+    .navbar{
+        padding: 0rem 6vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 7rem;
+        position: sticky;
+        top: 0;
+        background: linear-gradient(294.67deg, #0283E9 18.99%, #FC01CA 90.66%);
+        z-index: 1;
+    }
+    /* -------------------------------------left menu 768px -------------------------
+    -------------------*/
+    .navbar .left-menu{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5%;
+    }
+    
+    .navbar .left-menu .img1{
+        width: 17vw;
+        height: auto;
+        border: 0.2rem solid #ffffff;
+        border-radius: 50%;
+        position: relative;
+        top: 3vw;
+        cursor: pointer;
+        filter: drop-shadow(4px 4px 4px rgba(1, 1, 14, 0.5));
+        animation: bounceInDown;
+        animation-duration: 1.5s;
+    }
+    
+    .navbar .left-menu a{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 2%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Pacifico', cursive;
+        font-weight: 700;
+        font-size: 4vw;
+        line-height: 0rem;
+        color: #000000;
+        background: linear-gradient(to right, #0283E9 50%, #ffffff 50%);
+        background-size: 200% 100%;
+        background-position: 100% 0%;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: jello;
+        animation-duration: 2s;
+    }
+    
+    .navbar .left-menu a:hover{
+        background-position: 0 0;
+        transition: 2s;
+    }
+    
+    .navbar .left-menu a img{
+        width: 3vw;
+        height: auto;
+        transform: rotate(120deg);
+    }
+    /* ---------------------------------right-menu 768px-----------------
+    ------------------- */
+    .navbar .right-menu{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10%;
+    }
+    
+    .navbar .right-menu a{
+        font-size: 4vw;
+        font-family: 'Josefin Sans' sans-serif;
+        font-family: 'Pacifico', cursive;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 4rem;
+        background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+        background-size: 200% 100%;
+        background-position: 100% 0%;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    
+    .navbar .right-menu a:hover{
+        background-position:  0 0;
+        transition: 1s;
+    }
+
+/* ------------------------------------section 1 768px------------------
+----------------------------*/
+
+.section1{
+    padding: 10vw 15vw;
+    width: 100%;
+    height: auto;
+    background-image: url(../images/Vector\ 1.png);
+    background-size: 50%;
+    background-position: top right;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.section1 .sub{
+    padding: 3vw 5vw;
+    background: #B4BEC8;
+    border-radius: 0.5vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ /* ------------------------upper 768px-----------------
+ ------------------- */
+.section1 .sub .up{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section1 .sub .up p{
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 7rem;
+    background: linear-gradient(270.23deg, #0283E9 0.18%, #FC01CA 99.79%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+ /* ------------------------low 768px-----------------
+ ------------------- */
+.section1 .sub .low{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ------------------------------------left side 768px------------------
+-------------------- */
+.section1 .sub .low .left{
+    padding: 1vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    order: 2;
+}
+
+.section1 .sub .low .left p{
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 4vw;
+    color: #000000;
+}
+
+.section1 .sub .low .left input{
+    width: 100%;
+    height: auto;
+    font-family: "Quicksand" sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    padding: 1.5vw;
+}
+
+.section1 .sub .low .left textarea{
+    font-family: "Quicksand" sans-serif;
+    font-size: 2vw;
+    padding: 1.5vw;
+    width: 100%;
+    height: 15vw;
+    border-radius: 0.2vw;
+}
+
+.section1 .sub .low .left .btn{
+    background: linear-gradient(294.67deg, #0283E9 18.99%, #FC01CA 90.66%);
+    padding: 1.5vw 4vw;
+    border-radius: 0.3vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .left a{
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4vw;
+    line-height: auto;
+    text-align: center;
+    color: #FFFFFF;
+    
+}
+
+.section1 .sub .low .left a:hover{
+    background: rgb(211, 206, 206);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.section1 .sub .low .left .btn:hover{
+    transform: scale(1.01);
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* ----------------------------------------rught side 768px--------------
+---------------------- */
+
+.section1 .sub .low .right{
+    padding: 1vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.section1 .sub .low .right .up1{
+    padding-top: 0vw;
+    padding-left: 0vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.section1 .sub .low .right .up1 a{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    font-family: 'Objective';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5vw;
+    line-height: auto;
+    color: #0F001A;
+}
+
+.section1 .sub .low .right .up1 a img{
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.section1 .sub .low .right .lo1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0vw;
+}
+
+.section1 .sub .low .right .lo1 .links{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    padding: 1vw 0vw 2vw 0vw;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(1) img{
+    width: 5vw;
+    height: 5vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(2) img{
+    width: 6vw;
+    height: 5vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(3) img{
+    width: 6vw;
+    height: 5vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(4) img{
+    width: 4vw;
+    height: 5vw;
+    transition: all 0.2s;
+}
+
+.section1 .sub .low .right .lo1 .links a:nth-child(1) img:hover,
+.section1 .sub .low .right .lo1 .links a:nth-child(2) img:hover,
+.section1 .sub .low .right .lo1 .links a:nth-child(3) img:hover,
+.section1 .sub .low .right .lo1 .links a:nth-child(4) img:hover{
+    transform: scale(1.05);
+}
+
+
+.section1 .sub .low .right .lo1 .img{
+    width: 100%;
+}
+
+/* ----------------------------------section4 768px------------
+---------------------------- */
+
+.section4{
+    padding: 3vw 6vw;
+    background: rgba(1, 1, 14, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 2vw;
+}
+
+.section4 p{
+    font-family: 'Josefin Sans' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 0;
+    color: #FFFFFF;
+}
+
+.section4 .input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section4 input{
+    width: 50vw;
+    height: auto;
+    padding: 1vw 1vw;
+    border-radius: 5px;
+    font-size: 4vw;
+    border-style: none;
+}
+
+.section4 a img{
+    width: 6vw;
+    height: auto;
+    position: relative;
+    left: -7vw;
+    transition: all 0.2s;
+}
+
+.section4 a img:hover{
+    background-color: rgba(1, 1, 14, 0.3);
+    border-radius: 10%;
+}
+
+/* -----------------------------------footer 768px----------------
+------------------------------ */
+
+footer{
+    padding: 1vw 6vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B2B2B;
+}
+
+footer .content{
+    font-family: 'Josefin Sans' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4vw;
+    line-height: 10vw;
+    color: #FFFFFF;
+}
+
+footer .copyright{
+    font-family: 'Josefin Sans' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 4vw;
+    color: #FFFFFF;
+}
+
+}

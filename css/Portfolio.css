@@ -1,0 +1,1488 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+    cursor: default;
+}
+
+html a{
+    text-decoration: none;
+    cursor: pointer;
+}
+body{
+    
+}
+
+/* --------------------------------------Navbar Management----------------
+--------------------------------- */
+
+.navbar{
+    padding: 0rem 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(294.67deg, #0283E9 18.99%, #FC01CA 90.66%);
+    z-index: 1;
+}
+/* -------------------------------------left menu -------------------------
+-------------------*/
+.navbar .left-menu{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+.navbar .left-menu .img1{
+    width: 10vw;
+    height: auto;
+    border: 0.2rem solid #ffffff;
+    border-radius: 50%;
+    position: relative;
+    top: 3vw;
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 4px rgba(1, 1, 14, 0.5));
+    animation: bounceInDown;
+    animation-duration: 1.5s;
+}
+
+.navbar .left-menu a{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 0rem;
+    color: #000000;
+    background: linear-gradient(to right, #0283E9 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: jello;
+    animation-duration: 2s;
+}
+
+.navbar .left-menu a:hover{
+    background-position: 0 0;
+    transition: 2s;
+}
+
+.navbar .left-menu a img{
+    width: 2vw;
+    height: auto;
+    transform: rotate(120deg);
+}
+/* ---------------------------------right-menu-----------------
+------------------- */
+.navbar .right-menu{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar .right-menu a{
+    font-size: 2vw;
+    font-family: 'Josefin Sans' sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4rem;
+    background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.navbar .right-menu a:hover{
+    background-position:  0 0;
+    transition: 1s;
+}
+
+/* ------------------------------------section 1 ------------------
+----------------------------*/
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(../images/Vector\ 1.png);
+    background-size: 50%;
+    background-position: top right;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+/* ----------------------------left side---------------------------
+----------------------- */
+
+.section1 .left{
+    padding: 15vw 0vw 0vw 6vw;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.section1 .left p{
+    font-family: 'Josefin Sans' sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 500;
+    color: #828089;
+    text-align: justify;
+    animation: fadeInLeft 2s;
+}
+
+.section1 .left p span{
+    background: linear-gradient(to right, #FC01CA 50%, #0283E9 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.section1 .left p span:hover{
+    background-position: 0 0;
+    transition: 1.5s;
+}
+
+.section1 .left img{
+    padding: 0.3vw;
+    width: 5vw;
+    height: auto;
+}
+
+.section1 .left img:hover{
+    background-color: rgba(1, 1, 14, 0.3);
+    border-radius: 10%;
+}
+/* ----------------------------right side---------------------------
+----------------------- */
+
+.section1 .right{
+    width: 35%;
+    height: auto;
+    padding-top: 2vw;
+}
+
+.section1 .right img{
+    width: 100%;
+    height: auto;
+}
+
+/* -------------------------------------section2-----------------------
+---------------------------------- */
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+/* ---------------------------------section 2 left-side---------
+----------------------------- */
+.section2 .left{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2 .left .p1{
+    padding: 5vw 0vw 5vw 10vw;
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5vw;
+    line-height: auto;
+    text-align: left;
+    color: #000000;
+}
+
+.section2 .left img{
+    width: 15vw;
+    height: auto;
+}
+
+.section2 .left article{
+    width: 100%;
+    height: auto;
+    padding: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.section2 .left article img{
+    width: 80%;
+    height: auto;
+    animation: fadeInLeft 2s;
+}
+
+.section2 .left article p{
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: auto;
+    color: #000000;
+}
+
+.section2 .left article .btn{
+    background: linear-gradient(294.67deg, rgba(2, 131, 233, 0.6) 18.99%, rgba(252, 1, 202, 0.6) 90.66%);
+    border-radius: 0.5vw;
+    padding: 1vw;
+}
+
+.section2 .left article .btn a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5vw;
+    line-height: auto;
+    background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.section2 .left article .btn a:hover{
+    background-position: 0 0;
+    transition: 1.5s;
+}
+
+/* -----------------------section 2 right side------------
+------------------------- */
+
+.section2 .right{
+    padding-top: 5vw;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.section2 .right article{
+    width: 100%;
+    height: auto;
+    padding: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.section2 .right article:first-child img{
+    animation: fadeInRight 2s;
+}
+
+.section2 .right article:last-child img{
+    animation: fadeInRight 3s;
+}
+
+.section2 .right article img{
+    width: 80%;
+    height: auto;
+}
+
+.section2 .right article p{
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5vw;
+    line-height: auto;
+    color: #000000;
+}
+
+.section2 .right article .btn{
+    background: linear-gradient(294.67deg, rgba(2, 131, 233, 0.6) 18.99%, rgba(252, 1, 202, 0.6) 90.66%);
+    border-radius: 0.5vw;
+    padding: 1vw;
+}
+
+.section2 .right article .btn a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: auto;
+    background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.section2 .right article .btn a:hover{
+    background-position: 0 0;
+    transition: 1.5s;
+}
+/* ----------------------------------section3------------
+---------------------------- */
+
+.section3{
+    padding: 6vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+video{
+    width: 70%;
+    height: auto;
+}
+
+/* ----------------------------------section4------------
+---------------------------- */
+
+.section4{
+    padding: 3vw 6vw;
+    background: rgba(1, 1, 14, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 2vw;
+}
+
+.section4 p{
+    font-family: 'Josefin Sans' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 0;
+    color: #FFFFFF;
+}
+
+.section4 .input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section4 input{
+    width: 35vw;
+    height: auto;
+    padding: 1vw 1vw;
+    border-radius: 5px;
+    font-size: 2vw;
+    border-style: none;
+}
+
+.section4 a img{
+    width: 5vw;
+    height: auto;
+    padding: 0.6vw;
+    position: relative;
+    left: -5vw;
+    transition: all 0.2s;
+}
+
+.section4 a img:hover{
+    background-color: rgba(1, 1, 14, 0.3);
+    border-radius: 10%;
+}
+
+/* -----------------------------------footer----------------
+------------------------------ */
+
+footer{
+    padding: 1vw 6vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B2B2B;
+}
+
+footer .content{
+    font-family: 'Josefin Sans' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 6vw;
+    color: #FFFFFF;
+}
+
+footer .copyright{
+    font-family: 'Josefin Sans' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 1vw;
+    color: #FFFFFF;
+}
+
+/* --------------------------------website responsive----------------
+---------------------------------------- */
+
+/* --------------------------------Laptop Devices 1280px-------------------
+--------------------- */
+
+@media(max-width:1280px){
+
+/* --------------------------------------Navbar Management 1280px----------------
+--------------------------------- */
+
+.navbar{
+    padding: 0rem 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(294.67deg, #0283E9 18.99%, #FC01CA 90.66%);
+    z-index: 1;
+}
+/* -------------------------------------left menu  1280px-------------------------
+-------------------*/
+.navbar .left-menu{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+.navbar .left-menu .img1{
+    width: 8vw;
+    height: auto;
+    border: 0.2rem solid #ffffff;
+    border-radius: 50%;
+    position: relative;
+    top: 2vw;
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 4px rgba(1, 1, 14, 0.5));
+    animation: bounceInDown;
+    animation-duration: 1.5s;
+}
+
+.navbar .left-menu a{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    font-size: 2.5vw;
+    line-height: 0rem;
+    color: #000000;
+    background: linear-gradient(to right, #0283E9 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: jello;
+    animation-duration: 2s;
+}
+
+.navbar .left-menu a:hover{
+    background-position: 0 0;
+    transition: 2s;
+}
+
+.navbar .left-menu a img{
+    width: 2vw;
+    height: auto;
+    transform: rotate(120deg);
+}
+/* ---------------------------------right-menu 1280px-----------------
+------------------- */
+.navbar .right-menu{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar .right-menu a{
+    font-size: 2vw;
+    font-family: 'Josefin Sans' sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4rem;
+    background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.navbar .right-menu a:hover{
+    background-position:  0 0;
+    transition: 1s;
+}
+
+/* ------------------------------------section 1 1280px------------------
+----------------------------*/
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(../images/Vector\ 1.png);
+    background-size: 50%;
+    background-position: top right;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+/* ----------------------------left side 1280px---------------------------
+----------------------- */
+
+.section1 .left{
+    padding: 15vw 0vw 0vw 6vw;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.section1 .left p{
+    font-family: 'Josefin Sans' sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 400;
+    color: #828089;
+    text-align: justify;
+}
+
+.section1 .left p span{
+    background: linear-gradient(to right, #FC01CA 50%, #0283E9 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.section1 .left p span:hover{
+    background-position: 0 0;
+    transition: 1.5s;
+}
+
+.section1 .left img{
+    padding: 0.3vw;
+    width: 5vw;
+    height: auto;
+}
+
+.section1 .left img:hover{
+    background-color: rgba(1, 1, 14, 0.3);
+    border-radius: 10%;
+}
+
+}
+
+    /* ---------------------------------Tablet Devices 980px---------------
+    ------------------------ */
+    @media(max-width:980px){
+
+        /* --------------------------------------Navbar Management 980px----------------
+        --------------------------------- */
+        
+        .navbar{
+            padding: 0rem 6vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 8rem;
+            position: sticky;
+            top: 0;
+            background: linear-gradient(294.67deg, #0283E9 18.99%, #FC01CA 90.66%);
+            z-index: 1;
+        }
+        /* -------------------------------------left menu 980px -------------------------
+        -------------------*/
+        .navbar .left-menu{
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5%;
+        }
+        
+        .navbar .left-menu .img1{
+            width: 10vw;
+            height: auto;
+            border: 0.2rem solid #ffffff;
+            border-radius: 50%;
+            position: relative;
+            top: 2vw;
+            cursor: pointer;
+            filter: drop-shadow(4px 4px 4px rgba(1, 1, 14, 0.5));
+            animation: bounceInDown;
+            animation-duration: 1.5s;
+        }
+        
+        .navbar .left-menu a{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 2%;
+            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-weight: 700;
+            font-size: 3vw;
+            line-height: 0rem;
+            color: #000000;
+            background: linear-gradient(to right, #0283E9 50%, #ffffff 50%);
+            background-size: 200% 100%;
+            background-position: 100% 0%;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: jello;
+            animation-duration: 2s;
+        }
+        
+        .navbar .left-menu a:hover{
+            background-position: 0 0;
+            transition: 2s;
+        }
+        
+        .navbar .left-menu a img{
+            width: 2vw;
+            height: auto;
+            transform: rotate(120deg);
+        }
+        /* ---------------------------------right-menu 980px-----------------
+        ------------------- */
+        .navbar .right-menu{
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        
+        .navbar .right-menu a{
+            font-size: 3vw;
+            font-family: 'Josefin Sans' sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 4rem;
+            background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+            background-size: 200% 100%;
+            background-position: 100% 0%;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        
+        .navbar .right-menu a:hover{
+            background-position:  0 0;
+            transition: 1s;
+        }
+        
+        /* ------------------------------------section 1 980px------------------
+        ----------------------------*/
+        
+        .section1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-image: url(../images/Vector\ 1.png);
+            background-size: 50%;
+            background-position: top right;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+        }
+        
+        /* ----------------------------left side 980px---------------------------
+        ----------------------- */
+        
+        .section1 .left{
+            padding: 15vw 0vw 0vw 6vw;
+            width: 60%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 5vw;
+        }
+        
+        .section1 .left p{
+            font-family: 'Josefin Sans' sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-size: 2vw;
+            font-style: normal;
+            font-weight: 600;
+            color: #828089;
+            text-align: justify;
+        }
+        
+        .section1 .left p span{
+            background: linear-gradient(to right, #FC01CA 50%, #0283E9 50%);
+            background-size: 200% 100%;
+            background-position: 100% 0%;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        
+        .section1 .left p span:hover{
+            background-position: 0 0;
+            transition: 1.5s;
+        }
+        
+        .section1 .left img{
+            padding: 0.3vw;
+            width: 5vw;
+            height: auto;
+        }
+        
+        .section1 .left img:hover{
+            background-color: rgba(1, 1, 14, 0.3);
+            border-radius: 10%;
+        }
+        /* ----------------------------right side 980px---------------------------
+        ----------------------- */
+        
+        .section1 .right{
+            width: 35%;
+            height: auto;
+            padding-top: 3vw;
+        }
+        
+        .section1 .right img{
+            width: 100%;
+            height: auto;
+        }
+        
+        /* -------------------------------------section2 980px-----------------------
+        ---------------------------------- */
+        
+        .section2{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        /* ---------------------------------section 2 left-side 980px---------
+        ----------------------------- */
+        .section2 .left{
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .section2 .left .p1{
+            padding: 2vw 0vw 5vw 10vw;
+            font-family: 'Quicksand' sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2.5vw;
+            line-height: auto;
+            text-align: left;
+            color: #000000;
+        }
+        
+        .section2 .left img{
+            width: 15vw;
+            height: auto;
+        }
+        
+        .section2 .left article{
+            width: 100%;
+            height: auto;
+            padding: 6vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2vw;
+        }
+        
+        .section2 .left article img{
+            width: 100%;
+            height: auto;
+        }
+        
+        .section2 .left article p{
+            font-family: 'Quicksand' sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 4vw;
+            line-height: auto;
+            color: #000000;
+        }
+        
+        .section2 .left article .btn{
+            background: linear-gradient(294.67deg, rgba(2, 131, 233, 0.6) 18.99%, rgba(252, 1, 202, 0.6) 90.66%);
+            border-radius: 0.5vw;
+            padding: 1vw;
+        }
+        
+        .section2 .left article .btn a{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 3vw;
+            line-height: auto;
+            background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+            background-size: 200% 100%;
+            background-position: 100% 0%;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        
+        .section2 .left article .btn a:hover{
+            background-position: 0 0;
+            transition: 1.5s;
+        }
+        
+        /* -----------------------section 2 right side 980px------------
+        ------------------------- */
+        
+        .section2 .right{
+            padding-top: 2vw;
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10vw;
+        }
+        
+        .section2 .right article{
+            width: 100%;
+            height: auto;
+            padding: 6vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2vw;
+        }
+        
+        .section2 .right article img{
+            width: 100%;
+            height: auto;
+        }
+        
+        .section2 .right article p{
+            font-family: 'Quicksand' sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 4vw;
+            line-height: auto;
+            color: #000000;
+        }
+        
+        .section2 .right article .btn{
+            background: linear-gradient(294.67deg, rgba(2, 131, 233, 0.6) 18.99%, rgba(252, 1, 202, 0.6) 90.66%);
+            border-radius: 0.5vw;
+            padding: 1vw;
+        }
+        
+        .section2 .right article .btn a{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 3vw;
+            line-height: auto;
+            background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+            background-size: 200% 100%;
+            background-position: 100% 0%;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        
+        .section2 .right article .btn a:hover{
+            background-position: 0 0;
+            transition: 1.5s;
+        }
+        /* ----------------------------------section3 980px------------
+        ---------------------------- */
+        
+        .section3{
+            padding: 6vw;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        video{
+            width: 80%;
+            height: auto;
+        }
+        
+        /* ----------------------------------section4 980px------------
+        ---------------------------- */
+        
+        .section4{
+            padding: 3vw 6vw;
+            background: rgba(1, 1, 14, 0.8);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            gap: 2vw;
+        }
+        
+        .section4 p{
+            font-family: 'Josefin Sans' sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 3vw;
+            line-height: 0;
+            color: #FFFFFF;
+        }
+        
+        .section4 .input{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .section4 input{
+            width: 35vw;
+            height: auto;
+            padding: 1vw 1vw;
+            border-radius: 5px;
+            font-size: 2vw;
+            border-style: none;
+        }
+        
+        .section4 a img{
+            width: 5vw;
+            height: auto;
+            padding: 0.6vw;
+            position: relative;
+            left: -5vw;
+            transition: all 0.2s;
+        }
+        
+        .section4 a img:hover{
+            background-color: rgba(1, 1, 14, 0.3);
+            border-radius: 10%;
+        }
+        
+        /* -----------------------------------footer 980px----------------
+        ------------------------------ */
+        
+        footer{
+            padding: 6vw 6vw 3vw 6vw;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: #2B2B2B;
+        }
+        
+        footer .content{
+            font-family: 'Josefin Sans' sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 3vw;
+            line-height: 6vw;
+            color: #FFFFFF;
+        }
+        
+        footer .copyright{
+            font-family: 'Josefin Sans' sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2vw;
+            line-height: 4vw;
+            color: #FFFFFF;
+        }
+        
+        }
+
+@media(max-width:768px){
+
+/* --------------------------------------Navbar Management 768px----------------
+--------------------------------- */
+
+.navbar{
+    padding: 0rem 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(294.67deg, #0283E9 18.99%, #FC01CA 90.66%);
+    z-index: 1;
+}
+/* -------------------------------------left menu 768px -------------------------
+-------------------*/
+.navbar .left-menu{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+.navbar .left-menu .img1{
+    width: 17vw;
+    height: auto;
+    border: 0.2rem solid #ffffff;
+    border-radius: 50%;
+    position: relative;
+    top: 3vw;
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 4px rgba(1, 1, 14, 0.5));
+    animation: bounceInDown;
+    animation-duration: 1.5s;
+}
+
+.navbar .left-menu a{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    font-size: 4vw;
+    line-height: 0rem;
+    color: #000000;
+    background: linear-gradient(to right, #0283E9 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: jello;
+    animation-duration: 2s;
+}
+
+.navbar .left-menu a:hover{
+    background-position: 0 0;
+    transition: 2s;
+}
+
+.navbar .left-menu a img{
+    width: 3vw;
+    height: auto;
+    transform: rotate(120deg);
+}
+/* ---------------------------------right-menu 768px-----------------
+------------------- */
+.navbar .right-menu{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10%;
+}
+
+.navbar .right-menu a{
+    font-size: 4vw;
+    font-family: 'Josefin Sans' sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4rem;
+    background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.navbar .right-menu a:hover{
+    background-position:  0 0;
+    transition: 1s;
+}
+
+/* ------------------------------------section 1  768px------------------
+----------------------------*/
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../images/Vector\ 1.png);
+    background-size: 50%;
+    background-position: top right;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+/* ----------------------------left side 768px---------------------------
+----------------------- */
+
+.section1 .left{
+    padding: 0vw 0vw 0vw 6vw;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    order: 2;
+    position: relative;
+    top: -5vw;
+}
+
+.section1 .left p{
+    font-family: 'Josefin Sans' sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 800;
+    color: #000000;
+    text-align: justify;
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+.section1 .left p span{
+    background: linear-gradient(to right, #FC01CA 50%, #0283E9 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.section1 .left p span:hover{
+    background-position: 0 0;
+    transition: 1.5s;
+}
+
+.section1 .left img{
+    padding: 0.3vw;
+    width: 5vw;
+    height: auto;
+}
+
+.section1 .left img:hover{
+    background-color: rgba(1, 1, 14, 0.3);
+    border-radius: 10%;
+}
+/* ----------------------------right side 768px---------------------------
+----------------------- */
+
+.section1 .right{
+    width: 100%;
+    height: auto;
+    padding-top: 2vw;
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.section1 .right img{
+    width: 30%;
+    height: auto;
+}
+
+/* -------------------------------------section2 768px-----------------------
+---------------------------------- */
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+/* ---------------------------------section 2 left-side 768px---------
+----------------------------- */
+.section2 .left{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2 .left .p1{
+    padding: 0vw 0vw 5vw 10vw;
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: auto;
+    text-align: left;
+    color: #000000;
+}
+
+.section2 .left img{
+    width: 15vw;
+    height: auto;
+}
+
+.section2 .left article{
+    width: 100%;
+    height: auto;
+    padding: 6vw 0vw 6vw 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    animation: fadeInLeft 2s;
+}
+
+.section2 .left article img{
+    width: 100%;
+    height: auto;
+}
+
+.section2 .left article p{
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5vw;
+    line-height: auto;
+    color: #000000;
+}
+
+.section2 .left article .btn{
+    background: linear-gradient(294.67deg, rgba(2, 131, 233, 0.6) 18.99%, rgba(252, 1, 202, 0.6) 90.66%);
+    border-radius: 0.5vw;
+    padding: 1vw;
+}
+
+.section2 .left article .btn a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5vw;
+    line-height: auto;
+    background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.section2 .left article .btn a:hover{
+    background-position: 0 0;
+    transition: 1.5s;
+}
+
+/* -----------------------section 2 right side 768px------------
+------------------------- */
+
+.section2 .right{
+    padding-top: 0vw;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20vw;
+}
+
+.section2 .right article:first-child{
+    animation: fadeInRight 2s;
+}
+
+.section2 .right article:last-child{
+    animation: fadeInRight 3s;
+}
+
+.section2 .right article{
+    width: 100%;
+    height: auto;
+    padding: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.section2 .right article img{
+    width: 100%;
+    height: auto;
+}
+
+.section2 .right article p{
+    font-family: 'Quicksand' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5vw;
+    line-height: auto;
+    color: #000000;
+}
+
+.section2 .right article .btn{
+    background: linear-gradient(294.67deg, rgba(2, 131, 233, 0.6) 18.99%, rgba(252, 1, 202, 0.6) 90.66%);
+    border-radius: 0.5vw;
+    padding: 1vw;
+}
+
+.section2 .right article .btn a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5vw;
+    line-height: auto;
+    background: linear-gradient(to right, #FC01CA 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.section2 .right article .btn a:hover{
+    background-position: 0 0;
+    transition: 1.5s;
+}
+/* ----------------------------------section3 768px------------
+---------------------------- */
+
+.section3{
+    padding: 6vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+video{
+    width: 80%;
+    height: auto;
+}
+
+/* ----------------------------------section4 768px------------
+---------------------------- */
+
+.section4{
+    padding: 3vw 6vw;
+    background: rgba(1, 1, 14, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 2vw;
+}
+
+.section4 p{
+    font-family: 'Josefin Sans' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 0;
+    color: #FFFFFF;
+}
+
+.section4 .input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section4 input{
+    width: 50vw;
+    height: auto;
+    padding: 1vw 1vw;
+    border-radius: 5px;
+    font-size: 4vw;
+    border-style: none;
+}
+
+.section4 a img{
+    width: 6vw;
+    height: auto;
+    position: relative;
+    left: -7vw;
+    transition: all 0.2s;
+}
+
+.section4 a img:hover{
+    background-color: rgba(1, 1, 14, 0.3);
+    border-radius: 10%;
+}
+
+/* -----------------------------------footer 768px----------------
+------------------------------ */
+
+footer{
+    padding: 1vw 6vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B2B2B;
+}
+
+footer .content{
+    font-family: 'Josefin Sans' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4vw;
+    line-height: 10vw;
+    color: #FFFFFF;
+}
+
+footer .copyright{
+    font-family: 'Josefin Sans' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 4vw;
+    color: #FFFFFF;
+}
+
+}
